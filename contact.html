@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Your Clothing Store</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    body {
+      background-color: #f8f9fa;
+    }
+    .contact-section {
+      background-color: #ffffff;
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+    .contact-info h2 {
+      margin-bottom: 20px;
+    }
+    header {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 30px;
+    padding: 0px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+.cart img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center contents horizontally */
+}
+
+
+.sport-option {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sport-option:hover {
+  background-color: #771717;
+}
+
+
+
+
+.products {
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 80px; /* Add space between sports bar and product list */
+  margin-bottom: 0px; /* Increase the margin-bottom for more space above the footer */
+}
+
+.card {
+  margin-bottom: 70px; /* Added margin between cards */
+  margin-left: 25px;
+  border: none; /* Remove the border */
+}
+
+.card-body {
+  border: 1px solid #ccc; /* Add border around card body */
+  padding: 10px; /* Add padding for better appearance */
+}
+
+.card-body .btn {
+  border: 1px solid #ccc; /* Add border around card button */
+  padding: 5px 10px; /* Add padding for better appearance */
+}
+
+
+
+
+
+.close-popup:hover {
+  color: #ccc;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Carousel image size */
+.carousel-item img {
+  max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Center carousel images */
+  
+}
+
+.additional-info {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.location-heading {
+  text-align: center; /* Center the text */
+  margin-bottom: 2px; /* Add space below the heading */
+  font-size: 24px; /* Adjust the font size */
+  color: #fff; /* Text color */
+  background-color: #22337f; /* Black background color */
+  padding: 10px 20px; /* Add padding for better appearance */
+}
+
+
+/* Style for the map container */
+.map {
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the map horizontally */
+  border: 2px solid #333; /* Add border with dark color */
+  border-radius: 10px; /* Add border radius for a rounded appearance */
+  overflow: hidden; /* Hide overflow content (if any) */
+}
+
+/* Style for the iframe */
+.map iframe {
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Add border radius for a rounded appearance */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="basketball.html">Basketball</a></li>
+            <li><a href="football.html">Football</a></li>
+            <li><a href="rugby.html">Rugby</a></li>
+            <li><a href="soocer.html">Soocer</a></li>
+            <li><a href="Baseball.html">Baseball</a></li>
+            <li><a href="vollyball.html">Vollyball</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Hoodie</a></li>
+            <li><a href="contact.html">T-Shirts</a></li>
+            <li><a href="contact.html">Caps</a></li>
+    
+          </ul>
+        </nav>
+      </header>
+  <div class="container">
+    <div class="contact-section">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>Your Clothing Store is committed to providing high-quality clothing for men, women, and children. With a wide range of styles and sizes, we strive to meet the diverse fashion needs of our customers.</p>
+          <p>Our experienced team is dedicated to delivering exceptional customer service, ensuring a seamless shopping experience for all.</p>
+        </div>
+        <div class="col-md-6 contact-info">
+          <h2>Contact Information</h2>
+          <p><strong>Location:</strong> </p>
+          <p><strong>Phone:</strong> +1 (931) 952-2610</p>
+          <p><strong>Email:</strong> info.swiftsportwear@gmail.com</p>
+          <p><strong>Working Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+    </div>
+      <!-- Bootstrap JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    
+  </script>
+
+<section class="map">
+  <h2 class="location-heading">OUR LOCATION</h2> <!-- Add the heading here -->
+  <!-- Replace 'YOUR_GOOGLE_MAPS_EMBED_CODE' with your actual embedded map code -->
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8898898001567!2d-73.99338012369587!3d40.76444647138587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25857125d8fe5%3A0x95d06f5c4b60cde5!2sAmerica%20Hair%20Style%20International!5e0!3m2!1sen!2s!4v1713145558288!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+    <footer class="text-center mt-5">
+      <p>&copy; 2024 Your Clothing Store. All rights reserved.</p>
+    </footer>
+  </div>
+  
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

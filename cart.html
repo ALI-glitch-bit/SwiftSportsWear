@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Image Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .thumbnail-img {
+            width: 100px; /* Adjust thumbnail image size as needed */
+            cursor: pointer;
+        }
+        .thumbnail-img:hover {
+            border: 2px solid blue; /* Highlight effect on hover */
+        }
+        .selected-img {
+            border: 2px solid blue; /* Highlight effect for selected image */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center mb-3">
+            <img id="mainImage" src="img1.jpeg" class="img-fluid" alt="Main Image" style="max-height: 400px;">
+        </div>
+        <div class="col-md-12 text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-2 mb-3">
+                    <img class="thumbnail-img" src="img1.jpeg" alt="Thumbnail 1" onclick="showImage('img1.jpeg')">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <img class="thumbnail-img" src="img2.jpeg" alt="Thumbnail 2" onclick="showImage('img2.jpeg')">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <img class="thumbnail-img" src="img3.jpeg" alt="Thumbnail 3" onclick="showImage('img3.jpeg')">
+                </div>
+                <!-- Add more thumbnails as needed -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function showImage(imageUrl) {
+        document.getElementById('mainImage').src = imageUrl;
+        // Remove 'selected-img' class from all thumbnail images
+        var thumbnails = document.querySelectorAll('.thumbnail-img');
+        thumbnails.forEach(function(thumbnail) {
+            thumbnail.classList.remove('selected-img');
+        });
+        // Add 'selected-img' class to the clicked thumbnail image
+        event.target.classList.add('selected-img');
+    }
+</script>
+</body>
+</html>
